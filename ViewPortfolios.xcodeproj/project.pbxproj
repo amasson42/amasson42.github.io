@@ -13,6 +13,8 @@
 		AFACD98D26EA090B00FCA59A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFACD97826EA090A00FCA59A /* ContentView.swift */; };
 		AFACD98E26EA090B00FCA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFACD97926EA090B00FCA59A /* Assets.xcassets */; };
 		AFACD98F26EA090B00FCA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFACD97926EA090B00FCA59A /* Assets.xcassets */; };
+		F63D37AC26EA300F0099079D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = F63D37AB26EA300F0099079D /* assets */; };
+		F63D37AD26EA300F0099079D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = F63D37AB26EA300F0099079D /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		AFACD98626EA090B00FCA59A /* ViewPortfolios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewPortfolios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFACD98826EA090B00FCA59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFACD98926EA090B00FCA59A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F63D37AB26EA300F0099079D /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 		AFACD97126EA090A00FCA59A = {
 			isa = PBXGroup;
 			children = (
+				F63D37AB26EA300F0099079D /* assets */,
 				AFACD97626EA090A00FCA59A /* Shared */,
 				AFACD98026EA090B00FCA59A /* iOS */,
 				AFACD98726EA090B00FCA59A /* macOS */,
@@ -169,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFACD98E26EA090B00FCA59A /* Assets.xcassets in Resources */,
+				F63D37AC26EA300F0099079D /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFACD98F26EA090B00FCA59A /* Assets.xcassets in Resources */,
+				F63D37AD26EA300F0099079D /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
