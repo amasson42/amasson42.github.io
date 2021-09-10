@@ -13,10 +13,16 @@ struct ContentView: View {
         VStack {
             HeaderView()
             
+            // 1 - About me
+            
             // Hideable view to display my biography
             BiographyView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.purple.grayscale(0.8))
+            
+            SkillView()
+            
+            // 2 - Projects
             
             // All projects
             ProjectListView()
@@ -54,6 +60,26 @@ struct BiographyView: View {
 Hello
 There
 """)
+        }
+    }
+}
+
+struct SkillView: View {
+    
+    var body: some View {
+        VStack {
+            ForEach(skills, id: \.self) { skill in
+                Text(skill.language)
+                    .font(.title)
+                HStack {
+                    List {
+                        ForEach(skill.frameworks, id: \.self) { framework in
+                            Text(framework)
+                                .font(.title2)
+                        }
+                    }
+                }
+            }
         }
     }
 }

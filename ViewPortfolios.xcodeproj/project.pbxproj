@@ -15,6 +15,8 @@
 		AFACD98F26EA090B00FCA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFACD97926EA090B00FCA59A /* Assets.xcassets */; };
 		F63D37CA26EA36130099079D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = F63D37C926EA36120099079D /* assets */; };
 		F63D37CB26EA36130099079D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = F63D37C926EA36120099079D /* assets */; };
+		F63D37CD26EB8FF30099079D /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D37CC26EB8FF30099079D /* Skills.swift */; };
+		F63D37CE26EB8FF30099079D /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D37CC26EB8FF30099079D /* Skills.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		AFACD98826EA090B00FCA59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFACD98926EA090B00FCA59A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F63D37C926EA36120099079D /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		F63D37CC26EB8FF30099079D /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 			children = (
 				AFACD97726EA090A00FCA59A /* ViewPortfoliosApp.swift */,
 				AFACD97826EA090A00FCA59A /* ContentView.swift */,
+				F63D37CC26EB8FF30099079D /* Skills.swift */,
 				AFACD97926EA090B00FCA59A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -194,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFACD98C26EA090B00FCA59A /* ContentView.swift in Sources */,
+				F63D37CD26EB8FF30099079D /* Skills.swift in Sources */,
 				AFACD98A26EA090B00FCA59A /* ViewPortfoliosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFACD98D26EA090B00FCA59A /* ContentView.swift in Sources */,
+				F63D37CE26EB8FF30099079D /* Skills.swift in Sources */,
 				AFACD98B26EA090B00FCA59A /* ViewPortfoliosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
