@@ -1,0 +1,3 @@
+Where the real work begins. To put this project short: Let's use OpenGL.
+Every graphicals projects I worked on so far where more about mathematics than technology. As I already said, I love mathematics, so I actually like it.
+But can I make video games with an engine that needs more than 3 seconds to render a textured sphere ? Well yes I could maybe think about creating a Point&Click game or another kind that doesn't require a fluid 60fps gameplay. But I'm not interested in that idea. We have to fix problems at their core.

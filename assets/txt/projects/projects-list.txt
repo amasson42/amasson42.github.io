@@ -1,0 +1,26 @@
+
+- iOS
+    - Swifty Companion
+    - Swifty Protein
+    - E-Tailor
+    - This Portfolios
+
+- Graphics
+    - wolf3D
+    - Raytracer
+    - GLScene
+
+- Backend
+    - Express Node.js
+    - Vapor
+    - Gin
+    - Experiences with most importants Database (Postgress/MySql/MongoDB/SqLite)
+    
+
+- DevOps
+    - 42sh
+        (taught me about fork/child process and threads)
+    - Docker
+        (I had to dockerize many project that were not mine)
+    - Jenkins Installation
+        (I setup a Jenkins service for a cloud infrastructure)

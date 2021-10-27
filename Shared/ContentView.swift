@@ -37,13 +37,13 @@ struct ContentView: View {
 struct HeaderView: View {
     var body: some View {
         HStack {
-            Image(asset: "img/portfolio/circus.png")
+            Image(asset: "portfolio/circus.png")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)
             VStack {
                 Text("Arthur Masson")
-                Text("Developer of things")
+                Text("Developer full-stack")
                 Text("Must. Automate. Everything.")
                     .fontWeight(.medium)
                     .font(.caption)
@@ -68,18 +68,22 @@ struct SkillView: View {
     
     var body: some View {
         VStack {
-            ForEach(skills, id: \.self) { skill in
-                Text(skill.language)
-                    .font(.title)
-                HStack {
-                    List {
-                        ForEach(skill.frameworks, id: \.self) { framework in
-                            Text(framework)
-                                .font(.title2)
-                        }
-                    }
-                }
-            }
+            Text(String(asset: "selfbio/me-talking-about-me.txt"))
+                .multilineTextAlignment(.leading)
+                .lineLimit(5)
+            
+//            ForEach(skills, id: \.self) { skill in
+//                Text(skill.language)
+//                    .font(.title)
+//                HStack {
+//                    List {
+//                        ForEach(skill.frameworks, id: \.self) { framework in
+//                            Text(framework)
+//                                .font(.title2)
+//                        }
+//                    }
+//                }
+//            }
         }
     }
 }
@@ -117,7 +121,7 @@ struct FooterView: View {
 
 extension Image {
     init(asset path: String) {
-        let resourcesPath = Bundle.main.path(forResource: "assets/\(path)", ofType: nil)!
+        let resourcesPath = Bundle.main.path(forResource: "assets/img/\(path)", ofType: nil)!
         #if canImport(AppKit)
         let image = NSImage(contentsOfFile: resourcesPath)!
         self.init(nsImage: image)
@@ -125,6 +129,13 @@ extension Image {
         let image = UIImage(contentsOfFile: resourcesPath)!
         self.init(uiImage: image)
         #endif
+    }
+}
+
+extension String {
+    init(asset path: String) {
+        let resourcesPath = Bundle.main.path(forResource: "assets/txt/\(path)", ofType: nil)!
+        try! self.init(contentsOfFile: resourcesPath)
     }
 }
 
