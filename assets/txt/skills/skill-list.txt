@@ -1,7 +1,11 @@
 
 System programming (C/Python)
+Backend Server
+Frontend Mobile
 3D Graphics
 
 Docker
 Jenkins
 
+Self teaching
+Knowledge spreading

@@ -1,4 +1,3 @@
-
 const textassets = document.querySelectorAll('.textasset');
 Array.from(textassets).forEach((element, index) => {
     let textAssetName = element.getAttribute('text-asset-name');
@@ -18,6 +17,9 @@ Array.from(textassets).forEach((element, index) => {
                                 if (scriptList.includes('markdown')) {
                                     innerHTML = marked.parse(fetchedText);
                                 }
+                                // if (scriptList.includes('custom')) {
+                                //     /* ... */
+                                // }
                             } else {
                                 innerHTML = fetchedText;
                             }
