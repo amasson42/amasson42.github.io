@@ -1,3 +1,28 @@
 Where the real work begins. To put this project short: Let's use OpenGL.
-Every graphicals projects I worked on so far where more about mathematics than technology. As I already said, I love mathematics, so I actually like it.
-But can I make video games with an engine that needs more than 3 seconds to render a textured sphere ? Well yes I could maybe think about creating a Point&Click game or another kind that doesn't require a fluid 60fps gameplay. But I'm not interested in that idea. We have to fix problems at their core.
+Every graphicals projects I worked on so far where more about mathematics than technology. As I already said, I love mathematics, so I actually enjoyed it.
+But can I make video games with an engine that needs more than 3 seconds to render a textured sphere ? Well yes I could maybe think about creating a Point&Click game or another kind that doesn't require a fluid 60fps gameplay and gives you a 5 minutes loading screen before showing a static image. But for unknown reasons I'm not really interested in that idea. That how I stepped into the world of GPUs !
+
+This project started from a school project that required us to parse and render 3D obj files using OpenGL and the programming language we wanted.
+To choose the language, as someone who often praise the idea of trying new things to expand your knowledge base, I chose C++ so I could totally stay in my comfort zone. But also because it seems to be the most logical choice in developing video games. I did not know rust back then but if I would restart it all, I would totally use rust and Vulkan.
+As I continued to learn about OpenGL and different rendering solutions, I tried to put everything in the same project and make all of those compatible between each other to write in a same image buffer using the same global protocol and drawing behavior.
+That’s how I know have my own graphical engine that can handle some of the big game engine functionalities.
+
+Render a triangle
+
+Render multiple triangles
+
+Render meshes composed of set of triangles
+
+Transform matrices system hierarchy that can organise meshes in groups
+
+Instanciated meshes
+
+Assimp asset importing (image and scenes)
+
+Particle system with OpenCL interoperability
+
+Skeletal meshe animations
+
+Voxel rendering with geometry shaders
+
+Skybox
