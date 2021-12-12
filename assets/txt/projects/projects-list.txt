@@ -1,4 +1,8 @@
 
+- C/System
+    - 42sh
+        (taught me about fork/child process and threads)
+
 - iOS
     - Swifty Companion
     - Swifty Protein
@@ -15,12 +19,11 @@
     - Vapor
     - Gin
     - Experiences with most importants Database (Postgress/MySql/MongoDB/SqLite)
-    
 
 - DevOps
-    - 42sh
-        (taught me about fork/child process and threads)
     - Docker
         (I had to dockerize many project that were not mine)
     - Jenkins Installation
         (I setup a Jenkins service for a cloud infrastructure)
+    - Kubernetes
+        (Setup a cluster on raspberry pi)
