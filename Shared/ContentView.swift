@@ -10,6 +10,14 @@ import Foundation
 
 struct ContentView: View {
     var body: some View {
+        ScrollView {
+            PortfoliosView()
+        }
+    }
+}
+
+struct PortfoliosView: View {
+    var body: some View {
         VStack {
             HeaderView()
             
@@ -37,7 +45,7 @@ struct ContentView: View {
 struct HeaderView: View {
     var body: some View {
         HStack {
-            Image(asset: "portfolio/circus.png")
+            Image(asset: "me/working-in-office.jpg")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)
@@ -56,10 +64,11 @@ struct BiographyView: View {
     var body: some View {
         VStack {
             Text("Me talking about me")
-            Text("""
-Hello
-There
-""")
+            ScrollView {
+                Text(asset: "selfbio/me-talking-about-me.md")
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(nil)
+            }
         }
     }
 }
@@ -68,22 +77,19 @@ struct SkillView: View {
     
     var body: some View {
         VStack {
-            Text(String(asset: "selfbio/me-talking-about-me.txt"))
-                .multilineTextAlignment(.leading)
-                .lineLimit(5)
             
-//            ForEach(skills, id: \.self) { skill in
-//                Text(skill.language)
-//                    .font(.title)
-//                HStack {
-//                    List {
-//                        ForEach(skill.frameworks, id: \.self) { framework in
-//                            Text(framework)
-//                                .font(.title2)
-//                        }
-//                    }
-//                }
-//            }
+            //            ForEach(skills, id: \.self) { skill in
+            //                Text(skill.language)
+            //                    .font(.title)
+            //                HStack {
+            //                    List {
+            //                        ForEach(skill.frameworks, id: \.self) { framework in
+            //                            Text(framework)
+            //                                .font(.title2)
+            //                        }
+            //                    }
+            //                }
+            //            }
         }
     }
 }
@@ -121,21 +127,51 @@ struct FooterView: View {
 
 extension Image {
     init(asset path: String) {
-        let resourcesPath = Bundle.main.path(forResource: "assets/img/\(path)", ofType: nil)!
-        #if canImport(AppKit)
-        let image = NSImage(contentsOfFile: resourcesPath)!
+        guard let resourcesPath = Bundle.main.path(forResource: "assets/img/\(path)", ofType: nil) else {
+            fatalError("No image asset \(path.debugDescription)")
+        }
+#if canImport(AppKit)
+        guard let image = NSImage(contentsOfFile: resourcesPath) else {
+            fatalError("Failed to load image asset \(path.debugDescription)")
+        }
         self.init(nsImage: image)
-        #elseif canImport(UIKit)
-        let image = UIImage(contentsOfFile: resourcesPath)!
+#elseif canImport(UIKit)
+        guard let image = UIImage(contentsOfFile: resourcesPath) else {
+            fatalError("Failed to load image asset \(path.debugDescription)")
+        }
         self.init(uiImage: image)
-        #endif
+#endif
+    }
+}
+
+extension Text {
+    init(asset path: String) {
+        let text = String(asset: path)
+        
+        if path.hasSuffix(".md") {
+            guard #available(iOS 15, macOS 12, *),
+                  let markupText = try? AttributedString(markdown: text) else {
+                      self.init(text)
+                      return
+                  }
+            
+            self.init(markupText)
+        } else {
+            self.init(text)
+        }
     }
 }
 
 extension String {
     init(asset path: String) {
-        let resourcesPath = Bundle.main.path(forResource: "assets/txt/\(path)", ofType: nil)!
-        try! self.init(contentsOfFile: resourcesPath)
+        guard let resourcesPath = Bundle.main.path(forResource: "assets/txt/\(path)", ofType: nil) else {
+            fatalError("No text asset \(path.debugDescription)")
+        }
+        do {
+            try self.init(contentsOfFile: resourcesPath)
+        } catch {
+            fatalError("Image asset \(path.debugDescription) failed to load: \(error)")
+        }
     }
 }
 

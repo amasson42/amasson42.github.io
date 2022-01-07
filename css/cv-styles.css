@@ -9,7 +9,9 @@ body {
     flex-direction: column;
 }
 
-main {}
+main {
+    background-color: white;
+}
 
 header {
     text-align: center;
@@ -29,4 +31,24 @@ footer {
     padding-top: 20px;
 }
 
-.content {}
+.content {
+    float: right;
+    width: 60%;
+    background-color: lightgray;
+    padding-top: 20px;
+}
+
+.experience-type {
+    background-color: grey;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.experience {
+    background-color: darkgray;
+}
+
+.experience h1 {
+    color: purple;
+}
