@@ -15,3 +15,10 @@ I really like working in a group, not only for the social interactions, but also
 
 Then one day Apple created their own new and modern language called Swift. That gave a new meaning to my life ! Two weeks of using Swift made me fall in love with this perfectly designed language ! I'm not an addict of mobile plateform... As a matter of fact, I hate playing on those... But games aren't the only thing we do on our phones (I think). So for the only reason that I love the Apple ecosystem, I've spend lot of time creating apps for iPhone and Mac ! When I say "apps", I mean "unfinished project at proof of concept state to test one feature of a framework or implement an idea".
 
+---
+
+> If it's meant to be used, make it in a compiled language
+
+> If it is not automated, it's not done
+
+> Popular things are not better but always use the repo with the most stars
