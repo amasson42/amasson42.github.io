@@ -70,3 +70,8 @@ After rendering a frame, we can apply another effect on the framebuffer result u
 As the position of the camera is also sent to the shader, we can also create custom rendering like ray tracing or ray marching.
 
 The possibilities could be greatly improved if I implemented a multi buffered rendering so the shader could also compute effect using depth, normal or world position along with the color.
+
+
+# Metal
+
+After going this far with openGL and being much more familiar with usage of GPU, shaders and mathematics for video games rendering, I wanted to see how to use Metal, another 3D framework, but developed by Apple exlusively for their own hardware (kind of like everything Apple does). So I implemented most of the features I had from GLScene into Metal.

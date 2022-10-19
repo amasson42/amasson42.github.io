@@ -1,0 +1,3 @@
+When learning, I tend to only make minimalist project and delete them afterward. That's really dumb from me, but as a student I didn't think those 10 lines of codes would accumulate into potentially usefull examples to get back to.
+That's why when learning backend development with Vapor, I kept everything into the same project.
+This project is my resource of examples of almost everything I know how to do with Vapor.
