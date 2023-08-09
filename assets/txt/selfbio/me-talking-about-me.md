@@ -17,7 +17,9 @@ One day Apple created its own new and modern language called Swift. That gave a 
 
 During my studies, I had to find a part-time job but instead, I joined a startup on a full-time job. I started there as an iOS developer developing two apps that they were creating. Once those two were finished, my iOS skills were no longer required and I tried to join the front-end team by learning some basic web development with Symfony, then quickly switched to discover the world of DevOps. I finally got rid of my impostor syndrome from not knowing Docker and had some fun creating scripts that do every repetitive task that my coworkers were doing manually like bundling their NodeJs app, sending it on the production machine and installing it... Manually ! My new purpose as the DevOps were to trigger builds from commits that would create containers from their source code, create the platform to deploy the code from all microservices together in a clustered environment and run our tests against the services and Apis. I also learned how to create a backend service, containerize it and deploy them with Docker swarm or Kubernetes but I left the startup before being able to use those newly developed talents.
 
-After leaving I wanted to try the life of freelance. Being able to choose where, when and how I work. And mostly, to face one of my worst fears... Papers administration and adult stuffs !
+After leaving I wanted to try the life of freelance. Being able to choose where, when and how I work. And mostly, to face one of my worst fears... Papers administration and adult stuffs...
+
+One year into this new life, I'm still bored with the paper stuff. That didn't change. Also I feel a bit lonely constantly remotely working. And I'm getting more and more frustrated about doing small project and not serving a bigger purpose.
 
 ---
 
